@@ -929,25 +929,25 @@ async def auto_filter(client, msg, spoll=False):
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(2000)
+            await asyncio.sleep(3000)
             await hehe.delete()
             await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(2000)
+            await asyncio.sleep(3000)
             await hmm.delete()
             await message.delete()
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_photo(photo=SMART_PIC, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(2000)
+            await asyncio.sleep(3000)
             await fek.delete()
             await msg.delete()
     else:
         fuk = await message.reply_photo(photo=SMART_PIC, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(2000)
+        await asyncio.sleep(3000)
         await fuk.delete()
         await msg.delete()
     if spoll:
@@ -969,8 +969,7 @@ async def advantage_spell_chok(msg):
     ],[
     InlineKeyboardButton("🔍 ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴇᴄᴋ sᴘɪʟʟɪɴɢ ɢᴏᴏɢʟᴇ ✅", url=f"https://www.google.com/search?q={reply}+movie")
     ],[
-    InlineKeyboardButton("🔍 ᴏᴛᴛ ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ 🖥", url=f"https://www.google.com/search?q={reply}+ott+release+date"),
-    InlineKeyboardButton("🔍 ᴛʜᴇᴀᴛʀᴇ ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ 📅", url=f"https://www.google.com/search?q={reply}+release+date")
+    InlineKeyboardButton("🔍 ᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴇᴄᴋ ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ 📅", url=f"https://www.google.com/search?q={reply}+release+date")
     ]]  
     )    
     dl = await msg.reply_photo(
