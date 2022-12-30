@@ -25,8 +25,8 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 
 
 PICS = (environ.get('PICS', 'https://graph.org/file/d2c20ed467fd8a101409f.jpg https://graph.org/file/9fbfa93142640fdaeaf80.jpg https://graph.org/file/e2fba097d69d27061b1e1.jpg https://graph.org/file/fed816c138a42cafc24bb.jpg https://graph.org/file/e6ecfe9f99030aebbbd05.jpg https://graph.org/file/941bae7b0584a16eb0fd2.jpg https://graph.org/file/3f38fa53398771d450c0f.jpg')).split()
-MALIK_PH = environ.get("MALIK_PH", "https://te.legra.ph/file/c7a4a9010d38b4e364a18.jpg")
-SMART_PIC = environ.get("SMART_PIC", "https://te.legra.ph/file/840ef23e33080b3931bd6.jpg")
+MALIK_PH = environ.get("MALIK_PH", "https://te.legra.ph/file/455f5acc8033535c3ea9e.jpg")
+SMART_PIC = environ.get("SMART_PIC", "https://te.legra.ph/file/b0c1aaa7b07b9876e12cc.jpg")
 VIDEO_VD = environ.get("VIDEO_VD", "https://telegra.ph/file/566ff238e36d9f2425568.mp4")
 PHT = environ.get("PHT", "https://te.legra.ph/file/eb9a1682d1099a2118888.jpg")
 PHTT = environ.get("PHTT", "https://te.legra.ph/file/35fa6c385e82acbc6f91d.jpg")
