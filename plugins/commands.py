@@ -252,6 +252,9 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url="https://t.me/+auX77kg8XeI5YTI1")
+                ],
+                [
+                    InlineKeyboardButton('ᴅɪʀᴇᴄᴛ ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ᴄʜᴀɴɴᴇʟ', url="https://t.me/+9CVvA51h1xlmZmQ1")  
                 ]
             ]
         )
